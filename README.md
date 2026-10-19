@@ -28,10 +28,10 @@ Growth is calculated from 2018 to 2025 because 2026 is a partial year (data runs
 
 ## Validation
 
-The medians calculated via SQL were independently validated in Excel using the `MEDIAN` function over the raw transaction records.
+The SQL medians were recalculated independently in Excel from the raw sales table and compared row by row (`check_median` sheet in `excel/`).
 
-- **Automated Check Result (`check_median`):** `0` mismatches detected.
-- **Match Rate:** [103/103] district-year medians matched perfectly across all calculated metrics, confirming the accuracy of the SQL aggregation pipeline.
+- All 103 district-year medians match the SQL results exactly (total absolute difference: 0).
+- All 103 sales counts also match.
 
 ## Limitations
 
