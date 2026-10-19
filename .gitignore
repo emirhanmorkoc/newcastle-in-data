@@ -1,0 +1,6 @@
+data/raw/
+data/clean/newcastle_raw_filtered.csv
+*.db
+.ipynb_checkpoints/
+__pycache__/
+~$*
